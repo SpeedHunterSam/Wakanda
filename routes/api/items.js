@@ -23,7 +23,7 @@ router.post("/", (req, res) => {
     newItem.save().then(item=> res.json(item));
 });
 
-// @ route DELETE api/items/:id
+// route DELETE api/items/:id
 //Delete a Database Item
 //d
 
