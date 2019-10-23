@@ -13,13 +13,8 @@ router.get("/", (req, res) => {
     .then(items => res.json(items))
 });
 
-/*
-router.get("/", (req, res) => {
-    Item.find({})
-    .sort({date: -1})
-    .then(items => res.json(items))
-});
-*/
+
+
 
 // post request to api/items
 //create an item

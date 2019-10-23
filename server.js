@@ -26,8 +26,8 @@ app.use("/api/items", items);
 
 //static assets for production
 
-/*
-if(process.env.node_ENV === "production"){
+
+if(process.env.NODE_ENV === "production"){
     //set static folder
     app.use(express.static("client/build"));
     
@@ -35,14 +35,16 @@ if(process.env.node_ENV === "production"){
         res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
     });
 }
-*/
 
+
+/*
 if(process.env.node_ENV === "production"){
     //set static folder
     app.use("*", (req, res) =>
     res.sendFile(path.join(__dirname, "../client/build/index.html"))
    );
 }
+*/
 
 
 
