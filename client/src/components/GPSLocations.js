@@ -22,7 +22,7 @@ class GPSLocations extends Component {
             <Container >
                 <ListGroup>
                     <TransitionGroup className = "shopping-list">
-                        {items.map(({_id, name}) => (
+                        {items.map(({_id, name, date}) => (
                             <CSSTransition key={_id} timeout={500} classNames="fade">
                                 <ListGroupItem>
                                     <Button
@@ -33,7 +33,7 @@ class GPSLocations extends Component {
                                     >
                                         &times;
                                     </Button>
-                                    {name}
+                                    Waypoint: {name} || TimeStamp: {date}
                                 </ListGroupItem>
                             </CSSTransition>
                         ))}
