@@ -35,10 +35,13 @@ render(){
                 <Nav className="ml-auto" navbar>
                     <NavItem>
                         <NavLink href="https://github.com/SpeedHunterSam/Wakanda">
-                            My GitHub
+                            Home
                         </NavLink>
                         <NavLink href="https://github.com/SpeedHunterSam/Wakanda">
-                            GitHubx2
+                            Join Rally
+                        </NavLink>
+                        <NavLink href="https://github.com/SpeedHunterSam/Wakanda">
+                            Create Rally
                         </NavLink>
                     </NavItem>
                 </Nav>
