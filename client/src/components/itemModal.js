@@ -50,7 +50,7 @@ class ItemModal extends Component {
                 color ="dark"
                 style={{marginBottom: "2rem"}}
                 onClick={this.toggle}
-                >Add Item</Button>
+                >Add Location</Button>
                 
                 <Modal
                     isOpen={this.state.modal}
@@ -60,19 +60,19 @@ class ItemModal extends Component {
                     <ModalBody>
                         <Form onSubmit={this.onSubmit}>
                             <FormGroup>
-                                <Label for="item">Item</Label>
+                                <Label for="item">Paste Waypoint Below</Label>
                                 <Input 
                                     type="text"
                                     name="name"
                                     id="item"
-                                    placeholder="Add shopping item"
+                                    placeholder="Add GPS Location or Landmark"
                                     onChange={this.onChange}
                                 />
                                 <Button
                                     color="dark"
                                     style={{marginTop: "2rem"}}
                                     block
-                                >Add Item</Button>
+                                >Add to Route</Button>
                             </FormGroup>
                         </Form>
                     </ModalBody>
