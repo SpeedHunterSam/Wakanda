@@ -3,6 +3,7 @@ import {Container, ListGroup, ListGroupItem, Button} from "reactstrap";
 import {CSSTransition, TransitionGroup} from "react-transition-group";
 import uuid from "uuid";
 
+
 class ShoppingList extends Component {
     state = {
         items: [
@@ -43,7 +44,8 @@ class ShoppingList extends Component {
                                                 items: state.items.filter(item => item.id !== id)
                                             }));
                                         }}
-                                    >&times;</Button>
+                                    >&times;
+                                    </Button>
                                     {name}
                                 </ListGroupItem>
                             </CSSTransition>
