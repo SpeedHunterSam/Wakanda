@@ -1,7 +1,7 @@
 {
   "name": "wakanda",
   "version": "1.0.0",
-  "description": "shopping list",
+  "description": "Stealth Rally GPS Logger & Time Stamper",
   "main": "server.js",
   "scripts": {
     "client-install": "npm install --prefix client",
