@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import AppNavbar from "./components/appNavbar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import './App.css';
-import ShoppingList from "./components/shoppingList";
+import GPSLocations from "./components/GPSLocations";
 import ItemModal from "./components/itemModal";
 import {Container} from "reactstrap";
 
@@ -17,7 +17,7 @@ class App extends Component {
           <AppNavbar />
           <Container>
           <ItemModal />
-          <ShoppingList />
+          <GPSLocations />
           </Container>
         </div>
       </Provider>
