@@ -8,6 +8,12 @@ import PropTypes from "prop-types";
 
 class GPSLocations extends Component {
 
+    static propTypes ={
+        getItems: PropTypes.func.isRequired,
+        item: PropTypes.object.isRequired,
+        isAuthenticated: PropTypes.bool
+    }
+
     componentDidMount(){
         this.props.getItems();
     }
@@ -21,10 +27,11 @@ class GPSLocations extends Component {
         return(
             <Container >
                 <ListGroup>
-                    <TransitionGroup className = "shopping-list">
+                    <TransitionGroup className = "GPS-list">
                         {items.map(({_id, name, date}) => (
                             <CSSTransition key={_id} timeout={500} classNames="fade">
                                 <ListGroupItem>
+                                {this.props.isAuthenticated ? (
                                     <Button
                                         className="remove-btn"
                                         color="danger"
@@ -33,10 +40,12 @@ class GPSLocations extends Component {
                                     >
                                         &times;
                                     </Button>
-                                    Waypoint: {name} || TimeStamp: {date}
+                                    ) : null}
+                                   <strong> Waypoint:</strong> {name} <br/> <strong>TimeStamp:</strong> {date}
                                 </ListGroupItem>
                             </CSSTransition>
                         ))}
+                        
                     </TransitionGroup>
                 </ListGroup>
             </Container>
@@ -44,12 +53,10 @@ class GPSLocations extends Component {
     }
 }
 
-GPSLocations.propTypes ={
-    getItems: PropTypes.func.isRequired,
-    item: PropTypes.object.isRequired
-}
+
 
 const mapStateToProps = (state) => ({
-item: state.item
+item: state.item,
+isAuthenticated: state.auth.isAuthenticated
 });
 export default connect(mapStateToProps, {getItems, deleteItem})(GPSLocations);
