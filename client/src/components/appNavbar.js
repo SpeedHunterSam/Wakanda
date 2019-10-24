@@ -1,4 +1,6 @@
 import React, {Component, Fragment} from "react";
+import {Badge} from "reactstrap";
+
 
 import {
   Collapse,
@@ -69,7 +71,7 @@ render(){
         <div>
             <Navbar color="dark" dark expand="sm" className="mb-5">
                 <Container>
-                    <NavbarBrand href="/">Stealth Rally</NavbarBrand>
+                    <NavbarBrand href="/"><h2><strong><Badge color="warning">Stealth Rally</Badge></strong></h2></NavbarBrand>
                     <NavbarToggler onClick={this.toggle} />
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="ml-auto" navbar>
