@@ -11,6 +11,9 @@ import {
   Container
 } from "reactstrap";
 
+import RegisterModal from "./auth/RegisterModal";
+import Logout from "./auth/Logout";
+
 class AppNavbar extends Component {
 
     state ={
@@ -34,9 +37,7 @@ render(){
             <Collapse isOpen={this.state.isOpen} navbar>
                 <Nav className="ml-auto" navbar>
                     <NavItem>
-                        <NavLink href="https://github.com/SpeedHunterSam/Wakanda">
-                            Home
-                        </NavLink>
+                        <RegisterModal/>
                         <NavLink href="https://github.com/SpeedHunterSam/Wakanda">
                             Join Rally
                         </NavLink>
@@ -44,6 +45,9 @@ render(){
                             Create Rally
                         </NavLink>
                     </NavItem>
+                    <NavItem>
+                        <Logout/>
+                        </NavItem> 
                 </Nav>
             </Collapse>
         </Container>
