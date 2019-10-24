@@ -36,4 +36,4 @@ export const setItemsLoading = () => {
     return {
         type: ITEMS_LOADING
     }
-}
+};
