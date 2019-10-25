@@ -59,7 +59,7 @@ class ItemModal extends Component {
                         onClick={this.toggle}
                     >Add Location</Button>
             
-            :<strong className="mb-3 ml-4">Please login to modify your Waypoint</strong>}
+            :<strong className="mb-3 ml-4">(Spectator View) ...login to add your waypoint</strong>}
 
 
                 <Modal

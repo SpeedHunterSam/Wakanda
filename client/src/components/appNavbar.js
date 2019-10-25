@@ -71,15 +71,15 @@ render(){
         <div>
             <Navbar color="dark" dark expand="sm" className="mb-5">
                 <Container>
-                    <NavbarBrand href="/"><h2><strong><Badge color="warning">Stealth Rally</Badge></strong></h2></NavbarBrand>
+                    <NavbarBrand href="/"><h2><strong><Badge color="warning">Rally Logger</Badge></strong></h2></NavbarBrand>
                     <NavbarToggler onClick={this.toggle} />
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="ml-auto" navbar>
                             {isAuthenticated ? authLinks : guestLinks}
-                            <NavLink href="https://github.com/SpeedHunterSam/Wakanda">
+                            <NavLink href="/">
                                 Join Rally
                         </NavLink>
-                            <NavLink href="https://github.com/SpeedHunterSam/Wakanda">
+                            <NavLink href="/">
                                 Create Rally
                         </NavLink>
                         </Nav>
