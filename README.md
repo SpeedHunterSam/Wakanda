@@ -27,7 +27,8 @@ https://golden-city-wakanda.herokuapp.com/
 
 #### File Structure
 
-'''
+~~~
+
 Wakanda - (Rally App)
 ├── client
 │   ├── public
@@ -84,7 +85,7 @@ Wakanda - (Rally App)
 ├── README.md
 └── server.js
 
-'''
+~~~
 
 ###### References: 
 
