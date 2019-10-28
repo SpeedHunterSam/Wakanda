@@ -1,8 +1,33 @@
-# Wakanda
+# Rally App - Project Wakanda
 
-Deployed Link: https://golden-city-wakanda.herokuapp.com/
+## Description
+
+This app tracks a rally teams waypoints during a rally.  A time stamp is displayed immediately once the waypoint co-ordinates or user inputted location is recoreded in the database.
+
+Currently, this app functions as a basic rally location logger.
 
 
+#### Screen design layout
+
+Mobile First Design.  This app is intended to be used by the passenger.
+
+
+#### New Technologies Used
+
+* bcrypt for authentication
+* json web tokens for authentication
+* Redux for state management
+* React Strap for styling
+ 
+
+
+#### Deployed Link: 
+https://golden-city-wakanda.herokuapp.com/
+
+
+#### File Structure
+
+'''
 Wakanda - (Rally App)
 ├── client
 │   ├── public
@@ -58,3 +83,9 @@ Wakanda - (Rally App)
 ├── package.json
 ├── README.md
 └── server.js
+
+'''
+
+###### References: 
+
+In addition to the material learned in class, I referenced Brad Traversy's MERN Stack Tutorial when developing this app.
